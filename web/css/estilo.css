@@ -92,21 +92,22 @@ body{
 }
 
 .vista .shadow{
-	-webkit-transition: -webkit-box-shadow 0.5s;
-	-moz-transition: -moz-box-shadow 0.5s;
-	-o-transition: -webkit-box-shadow 0.5s;
-	-ms-transition: -ms-box-shadow 0.5s;
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    -o-transition: -webkit-box-shadow 0.5s;
+    -ms-transition: -ms-box-shadow 0.5s;
 
-	-webkit-box-shadow:0 0 20px #ccc;
-	-moz-box-shadow:0 0 20px #ccc;
-	-o-box-shadow:0 0 20px #ccc;
-	-ms-box-shadow:0 0 20px #ccc;
-	box-shadow:0 0 20px #ccc;
+    -webkit-box-shadow:0 0 20px #ccc;
+    -moz-box-shadow:0 0 20px #ccc;
+    -o-box-shadow:0 0 20px #ccc;
+    -ms-box-shadow:0 0 20px #ccc;
+    box-shadow:0 0 20px #ccc;
 }
 
 
 th, td {
     padding: 9px;
+    font-size: smaller;
 }
 
 
@@ -114,6 +115,14 @@ th, td {
 .vbottom{
     font-size: smaller;
     position: relative;
-    padding-top: 80%;
+    height: 100%;
 }
 
+
+p {
+   padding: 9px 3px; 
+}
+
+img{
+    padding: 15px 3px; 
+}
