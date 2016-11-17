@@ -89,6 +89,7 @@ body{
     -o-box-shadow:inset 0 0 5px #666;
     -ms-box-shadow:inset 0 0 5px #666;
     box-shadow:inset 0 0 5px #666;
+
 }
 
 .vista .shadow{
@@ -125,4 +126,33 @@ p {
 
 img{
     padding: 15px 3px; 
+}
+
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -70px; /* the bottom margin is the negative value of the footer's height */
+}
+.footS, .push {
+    height: 70px; /* .push must be the same height as .footer */
+}
+
+.fondoD{
+    background: url(../images/derecha.png);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+.fondoI{
+    background: url(../images/izquierda.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
