@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -30,6 +25,14 @@ and open the template in the editor.
             });
         </script>
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <style>  
+            p{
+                font-size: smaller;
+            }
+            img{
+                margin: 10px 0px;
+            }
+        </style>
     </head>
     <body style="background-image:url(images/bg.jpg);">
         <div class="vista">
@@ -37,21 +40,62 @@ and open the template in the editor.
                 <div class="zoomViewport" id='flipbook'>
                     <!-- Portada -->
                     <div class="hard"> 
-                        <div class="zoomContainer">
-                            Turn.js
-                        </div>                         
+                        <img src="images/portada.jpg" style="padding: 0;margin: 0;" height="600" width="461" alt="portada" />                         
                     </div> 
                     <!-- Contraportada -->
-                    <div class="hard">
-                        <div class="zoomContainer">
-                            Saludos
-                        </div> 
+                    <div>
+                        <div class="wrapper fondo">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <div class="col-md-12"><br/><br/></div>
+                                    <div class="col-md-offset-1 col-md-11">
+                                        <h5 class="page-header"><b>Pequeña presentación</b></h5>
+                                        <p>a</p> 
+                                        <br/>
+                                    </div>
+                                    <div class="col-md-6 creditos">
+                                        <h5 class="page-header"><b>Créditos</b></h5>
+                                        <p><b>&#9658;Investigación y textos</b></p> 
+                                        <p>Nancy</p>
+                                        <p>Cesar</p>
+                                        <p>Alan</p>
+                                        <p>Lagunes Ramírez Derick Axel</p><br/>
+                                        
+                                        <p><b>&#9658;Edición y coordinación</b></p>
+                                        <p>Galvan Zaragoza Jose Ismael</p>
+                                        <p>Lagunes Ramírez Derick Axel</p><br/>
+                                        
+                                        <p><b>&#9658;Audios</b></p>
+                                        
+                                        
+                                    </div>
+                                    <div class="col-md-6 creditos">
+                                        <h5 class="page-header">&nbsp;</h5>   
+                                        <p><b>&#9658;Videos</b></p>
+                                        <p>&bull;Aldo, El Robot de Platón</p>
+                                        
+                                        <br/>
+                                        
+                                        
+                                        <p><b>&#9658;Diseño y producción</b></p>
+                                        <p>Lagunes Ramírez Derick Axel</p><br/>
+                                        <p><b>&#9658;Agradecimientos especiales</b></p>
+                                        <p>&bull;Emmanuel García, Venezuela, creador plugin turn.js</p>
+                                        <p>&bull;Janne Aukia, Helsinki Finlandia, creador de zoomooz</p>
+                                        <p>&bull;Mark Otto y Jacob, US, creadores de bootstrap</p>
+                                        <p>&bull;Susana Salgado, México, Maestra de administración del tiempo</p>
+                                    </div>
+                                    <div class="col-md-12"></div>
+                                </div>
+                            </div> 
+                            <div class="push"></div>
+                        </div>
                     </div>
                     <!-- Pagina 1 -->
                     <div>
-                        <div class="zoomContainer">
-                            <div class="container-fluid">
-                                <div class="top">
+                        <div class="wrapper">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
                                     <table>
                                         <tr>
                                             <td colspan="3"><h4><b>Indice</b></h4></td>
@@ -105,38 +149,86 @@ and open the template in the editor.
                                             <td>2</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2">Leyes sobre el tiempo</td>
+                                            <td colspan="2">Conceptos de autoestima</td>
                                             <td>2</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2">Liderazgo y inteligencia emocional</td>
+                                            <td colspan="2">El sentido de pertenencia</td>
                                             <td>2</td>
                                         </tr>
                                     </table>
                                 </div>
-                                <div class="vbottom">                                   
-                                    <footer class="footer text-muted">
-                                        <hr>
-                                        <div class="col-md-6" style="text-align: left;">&copy; 2016 MechSolutions.</div><div class="col-md-6" style="text-align: right;">1</div>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>                  
+                            </div> 
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">                              
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">&copy; 2016 MechSolutions.</div><div class="col-md-6" style="text-align: right;">1</div>
+                        </div>
                     </div>
                     <!-- Pagina 2 -->
+                    <div>
+                        <div class="wrapper">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <table>
+                                        <tr>
+                                            <td colspan="3"><h4><b>Indice</b></h4></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">La competencia personal</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Conceptos y caracteristicas de la IE</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Aplicaciones de la IE</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Tecnicas de motivación y teoria de las 3 necesidades</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Conceptos y tipos de liderazgo</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div> 
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">                              
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">&copy; 2016 MechSolutions.</div><div class="col-md-6" style="text-align: right;">2</div>
+                        </div>
+                    </div>
+                    <!-- Pagina 3 -->
                     <div>
                         <div class="wrapper fondoI">
                             <div class="zoomContainer">
                                 <div class="container-fluid">
                                     <div class="col-md-6">
-                                        <img class="zoomTarget col-md-12" src="images/tiempo.jpg" alt=""/>
+                                        <h4 class="page-header">¿Qué es el tiempo?</h4>                                        
+                                        <p class="zoomTarget">
+                                            El término tiempo proviene del latín tempus. Como definición general, se entiende al tiempo como la duración de las cosas que se encuentran sujetas al cambio. Sin embargo su significado varía según el punto de vista que se tome y la disciplina en la que sea tratado.                                            
+                                        </p>
+                                        <h5 class="page-header">Segun la ciencia</h5>
                                         <p class="zoomTarget">
                                             El Tiempo es una magnitud física fundamental, el cual puede ser medido utilizando un proceso periódico, entendiéndose como un proceso que se repite de una manera idéntica e indefinidamente. La unidad de tiempo seleccionada es el segundo, éste último se define como la 86.400 ava parte del día solar medio.
                                         </p>
                                     </div>
                                     <div class="col-md-6">
+                                        <br/>
                                         <p class="zoomTarget">
                                             La mayoría de las actividades del ser humano están regidas por el tiempo, ya que éste nos ayuda a poner en orden nuestro día. Nos indica que deberíamos estar haciendo, o cuando algo va a suceder, es como una corriente sin fin que nos transporta, trasladándonos desde el pasado, presente, y luego al futuro.
+                                        </p>
+                                        <img class="zoomTarget col-md-12" src="images/tiempo.jpg" alt=""/>
+                                        <h5 class="page-header">Segun la filosofía</h5>
+                                        <p class="zoomTarget">
+                                            Desde la filosofía el tiempo puede ser definido también de diversas maneras. Este es un concepto que ha sido tratado desde los antiguos griegos y lo sigue siendo en la actualidad.
                                         </p>
                                     </div> 
                                 </div>
@@ -145,15 +237,36 @@ and open the template in the editor.
                         </div>
                         <div class="footS text-muted">
                             <hr>
-                            <div class="col-md-6" style="text-align: left;">&copy; 2016 MechSolutions.</div><div class="col-md-6" style="text-align: right;">2</div>
+                            <div class="col-md-6" style="text-align: left;">&copy; 2016 MechSolutions.</div><div class="col-md-6" style="text-align: right;">3</div>
                         </div>
                     </div>
-                    <!-- Pagina 3 -->
+                    <!-- Pagina 4 -->
                     <div>
                         <div class="wrapper fondoD">
                             <div class="zoomContainer">
                                 <div class="container-fluid">
-                                    <img class="zoomTarget col-md-12" src="images/tiempo.jpg" alt=""/>
+                                    <div class="col-md-6">
+                                        <p class="zoomTarget">                           
+                                            &bull;Desde una concepción aristotélica esta noción se encuentra relacionada con el movimiento, tal como en la física.  Es por ello que se definía al tiempo como aquella medida  del movimiento con relación a lo precedido y lo sucedido.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="zoomTarget">                           
+                                            &bull;Otros filósofos como San Agustín relacionan al tiempo con el alma. Esta relación se debe a que el pasado es algo que ya no existe,  el futuro algo que vendrá y el presente se escurre, transformándose en un recuerdo, es decir en pasado.
+                                        </p>
+                                        <br/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="zoomTarget">                           
+                                            &bull;Desde la teoría kantiana se entiende al tiempo como una forma de intuir  lo acontecido, virtud que le pertenece exclusivamente al hombre. Dentro de esta concepción, el tiempo no es relacionado con el movimiento ni con lo externo a las personas, si no como algo interior y personal, que permite organizar las experiencias íntimas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="zoomTarget">                           
+                                            &bull;Actualmente existen diversas posturas en la filosofía a la hora de definir al tiempo, y para ello son utilizadas diversas corrientes, como el existencialismo, el historicismo, etc. Por ejemplo hay filósofos que definen al tiempo como una conformación de dos temporalidades, una externa y otra interna. Otros estudiosos definen al tiempo como la esencia humana.
+                                        </p>
+                                    </div>
+                                    <img class="zoomTarget col-md-12" style="padding: 0;margin: 0;" height="160" src="images/tiempo.jpg" alt=""/>
                                 </div>
                             </div>
                             <div class="push"></div>
@@ -164,7 +277,263 @@ and open the template in the editor.
                                 &copy; 2016 MechSolutions.
                             </div>
                             <div class="col-md-6" style="text-align: right;">
-                                3
+                                4
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 5-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+                                    <div class="col-md-12">
+                                        <h4 class="page-header">¿ES EL TIEMPO REAL?</h4>
+                                        <br/><br/><br/>
+                                    </div>
+                                    <iframe width="430" height="315" src="https://www.youtube.com/embed/PncksneftoE" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 6-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                6
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 7-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                7
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 8-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                8
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 9-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                9
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 10-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                10
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 11-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                11
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 12-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                12
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 13-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                13
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 14-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                14
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 15-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                15
+                            </div>
+                        </div>
+                    </div>
+                    <!--pagina 16-->
+                    <div>
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 MechSolutions.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                16
                             </div>
                         </div>
                     </div>

@@ -156,3 +156,14 @@ html, body {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.fondo{
+    background: url(../images/izquierda.png);
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.creditos > p{
+     margin:0;
+     padding: 0;
+}
