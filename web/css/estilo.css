@@ -107,7 +107,7 @@ body{
 
 
 th, td {
-    padding: 9px;
+    padding: 4px 10px;
     font-size: smaller;
 }
 
@@ -146,24 +146,37 @@ html, body {
 }
 
 .fondoD{
-    background: url(../images/derecha.png);
+    background: url(../images/paginaD.png);
     background-size: 100% ;
     background-repeat: no-repeat;
 }
 
 .fondoI{
-    background: url(../images/izquierda.png);
+    background: url(../images/paginaI.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.fondo{
-    background: url(../images/izquierda.png);
+.contraportada{
+    background: url(../images/contraportada2.png);
     background-size: 100%;
     background-repeat: repeat;
+}
+
+.indice{
+    background: url(../images/Indice.png);
+    background-size: 100%;
+    background-repeat: repeat;
+    padding: 0;margin: 0;
+    height: 600px;
+    width: 461px;
 }
 
 .creditos > p{
      margin:0;
      padding: 0;
+}
+
+.caja{
+    background-color: black;color: white; padding: 5px 5px;
 }
