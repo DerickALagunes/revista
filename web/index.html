@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Tempus</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="lib/turnjs4/extras/jquery.min.1.7.js" type="text/javascript"></script>
-        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>-->
-        <script src="lib/turnjs4/lib/turn.min.js" type="text/javascript" ></script>
+        <link rel="icon" type="image/png" href="images/temps.ico">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="lib/jaukia-zoomooz-87ab8d9/jquery.zoomooz.js" type="text/javascript"></script>
+        <script src="lib/turnjs4/lib/turn.js" type="text/javascript" ></script>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="js/bootstrap.js" type="text/javascript"></script>
         <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet" type="text/css"/>
@@ -24,8 +24,7 @@
                 });
             });
         </script>
-        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-        <style>  
+        <style type="text/css">  
             p{
                 font-size: smaller;
             }
@@ -33,11 +32,12 @@
                 margin: 10px 0px;
             }
         </style>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="background-image:url(images/bg.jpg);">
         <div class="vista">
             <div class="container">
-                <div class="zoomViewport" id='flipbook'>
+                <div id='flipbook'>
                     <!-- Portada -->
                     <div class="hard"> 
                         <img src="images/portada.jpg" style="padding: 0;margin: 0;" height="600" width="461" alt="portada" />                         
@@ -45,150 +45,153 @@
                     <!-- Contraportada -->
                     <div>
                         <div class="wrapper contraportada">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <div class="col-md-12"><br/><br/></div>
-                                    <div class="col-md-12">
-                                        <h5 class="caja"><b>Pequeña presentación</b></h5>
-                                        <p>a</p> 
-                                        <br/>
-                                        <h5 class="caja"><b>Créditos</b></h5>
-                                    </div>
-                                    <div class="col-md-6 creditos">            
-                                        <p><b>&#9658;Investigación y textos</b></p> 
-                                        <p>Nancy</p>
-                                        <p>Cesar</p>
-                                        <p>Alan</p>
-                                        <p>Lagunes Ramírez Derick Axel</p><br/>
-                                        
-                                        <p><b>&#9658;Edición y coordinación</b></p>
-                                        <p>Galvan Zaragoza Jose Ismael</p>
-                                        <p>Lagunes Ramírez Derick Axel</p><br/>
-                                        
-                                        <p><b>&#9658;Audios</b></p>
-                                        
-                                        
-                                    </div>
-                                    <div class="col-md-6 creditos">
-                                        <p><b>&#9658;Videos</b></p>
-                                        <p>&bull;Aldo, El Robot de Platón</p>
-                                        
-                                        <br/>
-                                        
-                                        
-                                        <p><b>&#9658;Diseño y producción</b></p>
-                                        <p>Lagunes Ramírez Derick Axel</p><br/>
-                                        <p><b>&#9658;Agradecimientos especiales</b></p>
-                                        <p>&bull;Emmanuel García, Venezuela, creador plugin turn.js</p>
-                                        <p>&bull;Janne Aukia, Helsinki Finlandia, creador de zoomooz</p>
-                                        <p>&bull;Mark Otto y Jacob, US, creadores de bootstrap</p>
-                                        <p>&bull;Susana Salgado, México, Maestra de administración del tiempo</p>
-                                    </div>
-                                    <div class="col-md-12"></div>
+                            <div class="container-fluid">
+                                <div class="col-md-12"><br/><br/></div>
+                                <div class="col-md-12 caja">
+                                    <h5 ><b>Pequeña presentación</b></h5>
                                 </div>
-                            </div> 
+                                <div class="col-md-12">
+                                    <p>a</p> 
+                                    <br/>
+                                </div>
+                                <div class="col-md-12 caja">
+                                    <h5><b>Créditos</b></h5>                               
+                                </div>
+                                <div class="col-md-6 creditos">            
+                                    <br/>
+                                    <p><b>&#9658;Investigación y textos</b></p> 
+                                    <p>Nancy</p>
+                                    <p>Cesar</p>
+                                    <p>Alan</p>
+                                    <p>Lagunes Ramírez Derick Axel</p><br/>
+
+                                    <p><b>&#9658;Edición y coordinación</b></p>
+                                    <p>Galvan Zaragoza Jose Ismael</p>
+                                    <p>Lagunes Ramírez Derick Axel</p><br/>
+
+                                    <p><b>&#9658;Audios</b></p>
+
+
+                                </div>
+                                <div class="col-md-6 creditos">
+                                    <br/>
+                                    <p><b>&#9658;Videos</b></p>
+                                    <p>&bull;Aldo, El Robot de Platón</p>
+
+                                    <br/>
+
+
+                                    <p><b>&#9658;Diseño y producción</b></p>
+                                    <p>Lagunes Ramírez Derick Axel</p><br/>
+                                    <p><b>&#9658;Agradecimientos especiales</b></p>
+                                    <p>&bull;Emmanuel García, Venezuela, creador plugin turn.js</p>
+                                    <p>&bull;Janne Aukia, Helsinki Finlandia, creador de zoomooz</p>
+                                    <p>&bull;Mark Otto y Jacob, US, creadores de bootstrap</p>
+                                    <p>&bull;Susana Salgado, México, Maestra de administración del tiempo</p>
+                                </div>
+                                <div class="col-md-12"></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Pagina 1 -->
+                    <!-- Pagina 1 índice-->
                     <div>
                         <div class="indice">
-                            <div class="zoomContainer">
-                                <div class="container-fluid" style="float: right">
-                                    <table>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color: white"><h4><b>Indice</b></h4></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">¿Qué es el tiempo?</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Teoria de los tiempos</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Antecedentes filosoficos del tiempo</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Importancia de la gestión del tiempo</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Conceptos basicos de la administración del tiempo</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Mitos del tiempo</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Percepción del tiempo en otros paises</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Herramientas de gestión del tiempo</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Efectos patologicos del mal uso del tiempo</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Reuniones de trabajo efectivas</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Como realizar una minuta</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Tipos de negociación como estrategia</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Conceptos de autoestima</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">El sentido de pertenencia</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">La competencia personal</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Conceptos y caracteristicas de la IE</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Aplicaciones de la IE</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Tecnicas de motivación y teoria de las 3 necesidades</td>
-                                            <td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">Conceptos y tipos de liderazgo</td>
-                                            <td>2</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div> 
+                            <div class="container-fluid" style="float: right">
+                                <table>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: white"><h4><b>Indice</b></h4></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">¿Qué es el tiempo?</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Teoria de los tiempos</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Antecedentes filosoficos del tiempo</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Importancia de la gestión del tiempo</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Conceptos basicos de la administración del tiempo</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Mitos del tiempo</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Percepción del tiempo en otros paises</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Herramientas de gestión del tiempo</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Efectos patologicos del mal uso del tiempo</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Reuniones de trabajo efectivas</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Como realizar una minuta</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Tipos de negociación como estrategia</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Conceptos de autoestima</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">El sentido de pertenencia</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">La competencia personal</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Conceptos y caracteristicas de la IE</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Aplicaciones de la IE</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Tecnicas de motivación y teoria de las 3 necesidades</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Conceptos y tipos de liderazgo</td>
+                                        <td>2</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                     <!-- Pagina 2 -->
-                    <div>
+                    <div class="zoomViewport">
                         <div class="wrapper fondoI">
+
                             <div class="zoomContainer">
                                 <div class="container-fluid">
                                     <div class="col-md-6">
@@ -196,7 +199,7 @@
                                         <p class="zoomTarget">
                                             El término tiempo proviene del latín tempus. Como definición general, se entiende al tiempo como la duración de las cosas que se encuentran sujetas al cambio. Sin embargo su significado varía según el punto de vista que se tome y la disciplina en la que sea tratado.                                            
                                         </p>
-                                        <h5 class="page-header">Segun la ciencia</h5>
+                                        <h5 class="page-header">Según la ciencia</h5>
                                         <p class="zoomTarget">
                                             El Tiempo es una magnitud física fundamental, el cual puede ser medido utilizando un proceso periódico, entendiéndose como un proceso que se repite de una manera idéntica e indefinidamente. La unidad de tiempo seleccionada es el segundo, éste último se define como la 86.400 ava parte del día solar medio.
                                         </p>
@@ -207,7 +210,7 @@
                                             La mayoría de las actividades del ser humano están regidas por el tiempo, ya que éste nos ayuda a poner en orden nuestro día. Nos indica que deberíamos estar haciendo, o cuando algo va a suceder, es como una corriente sin fin que nos transporta, trasladándonos desde el pasado, presente, y luego al futuro.
                                         </p>
                                         <img class="zoomTarget col-md-12" src="images/tiempo.jpg" alt=""/>
-                                        <h5 class="page-header">Segun la filosofía</h5>
+                                        <h5 class="page-header">Según la filosofía</h5>
                                         <p class="zoomTarget">
                                             Desde la filosofía el tiempo puede ser definido también de diversas maneras. Este es un concepto que ha sido tratado desde los antiguos griegos y lo sigue siendo en la actualidad.
                                         </p>
@@ -222,7 +225,7 @@
                         </div>
                     </div>
                     <!-- Pagina 3 -->
-                    <div>
+                    <div class="zoomViewport">
                         <div class="wrapper fondoD">
                             <div class="zoomContainer">
                                 <div class="container-fluid">
@@ -262,19 +265,17 @@
                                 3
                             </div>
                         </div>
-                    </div>
+                    </div>    
                     <!--pagina 4-->
                     <div>
                         <div class="wrapper fondoI">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-                                    <div class="col-md-12">
-                                        <h4 class="page-header">¿ES EL TIEMPO REAL?</h4>
-                                        <br/><br/><br/>
-                                    </div>
-                                    <iframe width="430" height="315" src="https://www.youtube.com/embed/PncksneftoE" frameborder="0" allowfullscreen></iframe>
+                            <div class="container-fluid">
+                                <!--contenido-->
+                                <div class="col-md-12">
+                                    <h4 class="page-header">¿ES EL TIEMPO REAL?</h4>
+                                    <br/><br/><br/>
                                 </div>
+                                <iframe width="430" height="315" src="https://www.youtube.com/embed/PncksneftoE" frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="push"></div>
                         </div>
@@ -288,202 +289,29 @@
                             </div>
                         </div>
                     </div>
-                    <!--pagina 5-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-                                    
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                5
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 6-->
-                    <div>
-                        <div class="wrapper fondoI">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                6
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 7-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                7
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 8-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                8
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 9-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                9
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 10-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                10
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 11-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                11
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 12-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                12
-                            </div>
-                        </div>
-                    </div>
-                    <!--pagina 13-->
-                    <div>
-                        <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
-                                </div>
-                            </div>
-                            <div class="push"></div>
-                        </div>
-                        <div class="footS text-muted">
-                            <hr>
-                            <div class="col-md-6" style="text-align: left;">
-                                &copy; 2016 Tempus.
-                            </div>
-                            <div class="col-md-6" style="text-align: right;">
-                                13
-                            </div>
-                        </div>
-                    </div>
+                    <!--salto de pagina wuuuuuu-->
                     <!--pagina 14-->
-                    <div>
+                    <div class="zoomViewport">
                         <div class="wrapper fondoD">
                             <div class="zoomContainer">
                                 <div class="container-fluid">
                                     <!--contenido-->
-
+                                    <h4 class="page-header">Conceptos de autoestima</h4>
+                                    <div class="col-md-6 texto">
+                                        <p class="zoomTarget">&bull; De auto y estima. Valoración generalmente positiva de sí mismo.</p>
+                                        <p class="pull-right">--Real Academia Española</p><br/><br/>
+                                        <p class="zoomTarget">&bull; La autoestima es la concepción afectiva que tenemos sobre nuestra propia persona partiendo de nuestro conocimiento del propio autoconcepto es decir saber quienes somos cuanto nos queremos y cuanto nos valoramos</p>
+                                        <p class="pull-right">--Gianmarco Villarreal</p><br/><br/>
+                                        <p class="zoomTarget">&bull; Valoración que uno tiene de si mismo. Positiva o Negativa. Se forma a través de un proceso de asimilación y reflexión mediante el cual interioriza las opiniones de las personas socialmente significativas (padres, maestros, compañeros...) y los utiliza como criterios para su propia conducta</p>
+                                        <p class="pull-right">--Eduardo Rodríguez Machado</p><br/><br/>
+                                    </div>
+                                    <div class="col-md-6 texto">
+                                        <p class="zoomTarget">&bull; Es la confianza plena y consciente de los propios actos a partir del reconocimiento como un ser útil.</p>
+                                        <p class="pull-right">--Joel García O.</p><br/><br/>  
+                                        <p class="zoomTarget">&bull; Es el sentimiento valorativo de nuestro ser, de nuestra manera de ser, de quienes somos nosotros, del conjunto de rasgos corporales, mentales y espirituales que configuran nuestra personalidad.</p>  
+                                        <p class="pull-right">--Jonathan Castillo</p><br/><br/>
+                                        <img class="zoomTarget" src="images/autoestima.png" height="200" alt=""/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="push"></div>
@@ -501,10 +329,23 @@
                     <!--pagina 15-->
                     <div>
                         <div class="wrapper fondoD">
-                            <div class="zoomContainer">
-                                <div class="container-fluid">
-                                    <!--contenido-->
-
+                            <div class="zoomViewport">
+                                <div class="zoomContainer">
+                                    <div class="container-fluid texto">
+                                        <!--contenido-->
+                                        <div class="col-md-6">
+                                            <br/>
+                                            <p class="zoomTarget">&bull; La autoestima es poder aceptarte tal cual eres, sintiéndote seguro con el medio en que vives y de las elecciones que haces sin importarte las criticas destructivas.</p>
+                                            <p class="pull-right">--Lolita</p><br/><br/>  
+                                            <p class="zoomTarget">&bull; Sentimiento de aceptación a uno mismo, derivado del autoconocimiento, la reflexión y el análisis de el ser y el quehacer individual. (me conozco, me gusto, me quiero y me respeto)</p>
+                                            <p class="pull-right">--Paola Rubio Salinas</p><br/><br/>  
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br/>
+                                            <p class="zoomTarget">&bull; La autoestima es lo mejor que tenemos nosotros porque es nuestro respeto y el valor que nos tenemos a nosotros mismos, somos lo mejor del mundo. Nunca hay que menospreciarnos, porque nadie es igual a nosotros, podemos hacer lo que queramos, porque tenemos esa capacidad, somos dueños absolutos de nuestro yo.</p>
+                                            <p class="pull-right">--Elvira Katia Juárez García</p><br/><br/>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="push"></div>
@@ -519,10 +360,35 @@
                             </div>
                         </div>
                     </div>
+                    <!--pagina x-->
+                    <div class="zoomViewport">
+                        <div class="wrapper fondoD">
+                            <div class="zoomContainer">
+                                <div class="container-fluid">
+                                    <!--contenido-->
+
+                                </div>
+                            </div>
+                            <div class="push"></div>
+                        </div>
+                        <div class="footS text-muted">
+                            <hr>
+                            <div class="col-md-6" style="text-align: left;">
+                                &copy; 2016 Tempus.
+                            </div>
+                            <div class="col-md-6" style="text-align: right;">
+                                x
+                            </div>
+                        </div>
+                    </div>
                     <!-- Ultima hoja -->
-                    <div class="hard"></div>
+                    <div class="hard">
+                        esto no sirve, rellenar con color si es necesario :v
+                    </div>
                     <!-- Final -->
-                    <div class="hard"></div>
+                    <div class="hard">
+                        <img src="images/final.jpg" style="padding: 0;margin: 0;" height="600" width="461" alt="final" />                         
+                    </div>
                 </div>
             </div>
         </div>

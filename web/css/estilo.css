@@ -178,5 +178,10 @@ html, body {
 }
 
 .caja{
-    background-color: black;color: white; padding: 5px 5px;
+    background-color: #023f62;color: white; padding: 5px 5px;
+}
+
+.texto > p{
+    margin:0;
+     padding: 0;
 }
