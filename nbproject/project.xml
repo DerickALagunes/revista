@@ -14,5 +14,15 @@
                 <root id="test.src.dir" name="Test Packages"/>
             </test-roots>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>autoestima</word>
+            <word>caracteristicas</word>
+            <word>empatía</word>
+            <word>estrés</word>
+            <word>filosofícos</word>
+            <word>IE</word>
+            <word>positividad</word>
+            <word>septimo</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>
